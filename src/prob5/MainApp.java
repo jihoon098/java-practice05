@@ -11,14 +11,14 @@ public class MainApp {
 			stack.push("java");
 			stack.push(".");
 
-			while (stack.isEmpty() == false) {
+			while (stack.isEmpty() == false) { //있으면 
 				String s = stack.pop();
 				System.out.println( s );
 			}
 
 			System.out.println("======================================");
 
-			stack = new MyStack<String>(3);
+			stack = new MyStack(3);
 			stack.push("Hello");
 
 			System.out.println(stack.pop());
